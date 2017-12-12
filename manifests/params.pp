@@ -167,6 +167,10 @@ class software::params (
         'source' => 'https://www.virtualbox.org/download/oracle_vbox.asc',
       }
     }
+    $vmware_version = '14.0.0-6661328'
+    $vmware_urlbase = 'https://download3.vmware.com/software/player/file'
+    $vmware_package = "VMware-Player-${vmware_version}.x86_64.bundle"
+
   } elsif ($::operatingsystem == 'windows') and (versioncmp($::operatingsystemrelease, '7') >= 0) {
     #### init ####
     include '::chocolatey'
