@@ -142,7 +142,13 @@ class software::params (
     $atom_url = 'https://atom.io/download/deb'
 
 
-    # ### social ####
+    #### idesdk ####
+    $pdk_version  = 'latest'
+    $pdk_url_base = 'https://pm.puppetlabs.com/cgi-bin/pdk_download.cgi'
+    $pdk_url      = "${pdk_url_base}?dist=ubuntu&rel=16.04&arch=${::architecture}&ver=${pdk_version}"
+
+
+    #### social ####
     $skype_version = undef
     $skype_url     = undef
 
