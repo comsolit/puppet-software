@@ -54,6 +54,8 @@ class software::params (
     # ### idesdk ####
     $android_studio_version = '145.3537739'
     $android_studio_url     = "https://dl.google.com/dl/android/studio/install/2.2.3.0/android-studio-ide-${android_studio_version}-mac.dmg"
+    $pdk_version            = undef
+    $pdk_url                = undef
 
 
     # ### prefpanes ####
@@ -142,13 +144,13 @@ class software::params (
     $atom_url = 'https://atom.io/download/deb'
 
 
-    #### idesdk ####
+    # ### idesdk ####
     $pdk_version  = 'latest'
     $pdk_url_base = 'https://pm.puppetlabs.com/cgi-bin/pdk_download.cgi'
     $pdk_url      = "${pdk_url_base}?dist=ubuntu&rel=16.04&arch=${::architecture}&ver=${pdk_version}"
 
 
-    #### social ####
+    # ### social ####
     $skype_version = undef
     $skype_url     = undef
 
@@ -191,6 +193,11 @@ class software::params (
 
     # ### editors ####
     $atom_url = undef
+
+
+    # ### idesdk ####
+    $pdk_version = undef
+    $pdk_url     = undef
 
 
     # ### social ####

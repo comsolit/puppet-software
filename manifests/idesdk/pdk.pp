@@ -20,7 +20,7 @@ class software::idesdk::pdk (
       }
 
       file { '/tmp/pdk.deb':
-        source  => $url,
+        source => $url,
         owner  => 'root',
         group  => 'root',
         mode   => '0644',

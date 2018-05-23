@@ -13,7 +13,7 @@ describe 'software::idesdk::pdk' do
           it { is_expected.to contain_file('/tmp/pdk.deb') }
           it { is_expected.to contain_package('pdk') }
         else
-          it { is_expected.to compile.and_raise_error(/is not supported on /) }
+          it { is_expected.to compile.and_raise_error(%r{is not supported on }) }
         end
       end
     end
