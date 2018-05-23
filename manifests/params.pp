@@ -95,6 +95,9 @@ class software::params (
     $virtualbox_build   = '112440'
     $virtualbox_url     = "http://download.virtualbox.org/virtualbox/${virtualbox_version}/VirtualBox-${virtualbox_version}-${virtualbox_build}-OSX.dmg"
     $virtualbox_key     = undef
+    $vmware_version     = undef
+    $vmware_urlbase     = undef
+    $vmware_package     = undef
 
 
     # ### webstack ####
@@ -206,6 +209,10 @@ class software::params (
     $virtualbox_build   = undef
     $virtualbox_url     = undef
     $virtualbox_key     = undef
+    $vmware_version     = undef
+    $vmware_urlbase     = undef
+    $vmware_package     = undef
+
   } else {
     fail("The ${module_name} module is not supported on ${::operatingsystem} with version ${::operatingsystemrelease}.")
   }
